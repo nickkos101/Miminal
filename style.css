@@ -1,0 +1,290 @@
+h1,h2,h3,h4,h5,h6,p {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+	max-width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header {
+	width:100%;
+	background-color:#fff;
+	height:100px;
+	position: fixed;
+	z-index:90000;
+	top:0px;
+	left:0px;
+}
+
+.logo {
+	padding-top:22px;
+	margin-left:33px;
+}
+
+.navigation {
+	float:right;
+	margin-top:42px;
+}
+
+.navigation li {
+	list-style: none;
+	float:left;
+	border-right:1px groove #565656;
+	font-size:19px;
+	color:#565656;
+	padding-left:15px;
+	padding-right:15px;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navigation li:first-of-type {
+	padding-left:0px;
+}
+
+.navigation li:last-of-type {
+	border:none;
+}
+
+.navigation li a {
+	color:#565656;
+	text-decoration: none;
+}
+
+.content {
+	margin-top:100px;
+}
+
+.banner {
+	width:100%;
+	height:538px;
+	background-color:#00767e;
+	background-image:url('images/slider-bg.png');
+	background-size: cover;
+}
+
+.slider {
+	width: 100%;
+	height:538px;
+	position: relative;
+}
+
+.slide-bank {
+	position: relative;
+	float:left;
+	width: 100%;
+	height:100%;
+}
+
+.slide {
+	position: relative;
+	width: 100%;
+	height:100%;
+}
+
+.slide-image {
+	margin-top:45px;
+	margin-left: 65px;
+}
+
+.slide-content {
+	position:absolute;
+	top:0px;
+	left:538px;
+	max-width: 510px;
+	height:358px;
+	padding-top:180px;
+}
+
+.moniker {
+	width:180px;
+	color:#fff;
+	margin-bottom: 30px;
+}
+
+.moniker p {
+	font-size: 21px;
+	text-transform: uppercase;
+	vertical-align: top;
+	line-height: 25px;
+}
+
+.moniker img {
+	float:left;
+	padding-right:8px;
+}
+
+.slide-content h2 {
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	font-weight: lighter;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 39px;
+	margin: 0px;
+	clear:both;
+}
+
+.slide-content p {
+	color:#fff;
+	font-size: 17px;
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	margin:0px;
+}
+
+.slide-content button {
+	background: none;
+	background-color: #54d3c3;
+	border:none;
+	width:171px;
+	height:45px;
+	color:#fff;
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	font-size: 21px;
+	text-align: center;
+	margin-top:28px;
+}
+
+.slider-nav {
+	float:right;
+	position: absolute;
+	right:0px;
+}
+
+.box-item {
+	float:left;
+	width:119px;
+	height:123px;
+	background-color:#027e82;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box-item img {
+	padding-top:30px;
+}
+
+.light {
+	background-color:#048b8b;
+}
+
+.lightest {
+	background-color:#079e98;
+}
+
+.center-content {
+	float:left;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	width:100%;
+}
+
+.center-content h2 {
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	color:#828282;
+	font-size:41px;
+	font-weight: normal;
+}
+
+.center-content p {
+	font-size:15px;
+	color:#9f9f9f;
+}
+
+.tablature-content {
+	float:left;
+	width: 100%;
+	margin-top:40px;
+}
+
+.tablature-nav {
+	float:left;
+	width:100%;
+	height:166px;
+}
+
+.tablature-nav  .tab {
+	width:16.6666666666666667%;
+	height:166px;
+	background-color:#01646c;
+	float: left;
+	text-align: center;
+}
+
+.tablature-nav .tab img {
+	margin-top:50px;
+}
+
+.tab-bank .tab.original {
+	display: block;
+	background-color:#01646c;
+}
+
+.tab.light {
+	background-color:#097b84;
+}
+
+.tab.lighter {
+	background-color:#118f99;
+}
+
+.tab.ultralight {
+	background-color: #1da0aa;
+}
+
+.tab.lightest {
+	background-color: #29b7c2;
+}
+
+.tab.megalight {
+	background-color:#3ccad5;
+}
+
+.tab-bank {
+	float: left;
+	width:100%;
+	background-color:#01646c;
+	position: relative;
+	height:400px;
+}
+
+.tab-bank .tab {
+	width:100%;
+	height:400px;
+	display:none;
+	color:#fff;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+.tab-bank .tab h1 {
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	font-size:41px;
+	font-weight: normal;
+	border-bottom:1px solid #fff;
+	margin-bottom:0px;
+	padding-bottom:10px;
+}
+
+.footer {
+	float:left;
+	height:100px;
+	width:100%;
+	background-color:#fff;
+	text-align: center;
+}
+
+.footer p {
+	padding-top:10px;
+	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
+	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+	font-size:23px;
+	color:#828282;
+}
