@@ -4,6 +4,10 @@ $(document).ready(function(){
 		$('.tab-bank .tab').hide();
 	}
 
+	$('.mobile-menu img').click(function() {
+		$('.mobile-menu ul').toggle();
+	});
+
 
 	$('.tablature-nav .tab').click(function(){
 		tabBuffer();
