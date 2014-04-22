@@ -1,5 +1,45 @@
-h1,h2,h3,h4,h5,h6,p {
+body {
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#038C8C;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+hr {
+	height: 42px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	background-image:url('images/marker.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+textarea {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top:10px;
+	margin-bottom: 10px;
+	resize:none;
+	min-height: 180px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+	width: 100%;
+	margin-top:10px;
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
 }
 
 .container {
@@ -7,6 +47,10 @@ h1,h2,h3,h4,h5,h6,p {
 	margin-left:auto;
 	margin-right:auto;
 	min-width: 320px;
+	padding:20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .header {
@@ -17,16 +61,15 @@ h1,h2,h3,h4,h5,h6,p {
 	z-index:90000;
 	top:0px;
 	left:0px;
+	border-bottom: 1px solid #ccc;
 }
 
 .logo {
-	padding-top:22px;
 	margin-left:33px;
 }
 
 .navigation {
 	float:right;
-	margin-top:42px;
 }
 
 .navigation li {
@@ -189,6 +232,8 @@ h1,h2,h3,h4,h5,h6,p {
 	float:left;
 	text-align: center;
 	width:100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .center-content h2 {
@@ -282,6 +327,10 @@ h1,h2,h3,h4,h5,h6,p {
 	padding-right:20px;
 }
 
+.tab.show {
+	display: block;
+}
+
 .tab-bank .tab h1 {
 	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
 	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
@@ -290,7 +339,13 @@ h1,h2,h3,h4,h5,h6,p {
 	border-bottom:1px solid #fff;
 	margin-bottom:0px;
 	padding-bottom:10px;
+	color: #fff;
 }
+
+.tab p {
+	color: #fff !important;
+}
+
 
 .footer {
 	float:left;
@@ -301,11 +356,97 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .footer p {
-	padding-top:10px;
 	font-family: "Segoe UI Light","Segoe WPC","Segoe UI",
 	Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
 	font-size:23px;
 	color:#828282;
+}
+
+.footer .tab {
+	text-align: left;
+}
+
+/* Page Styles */
+
+.content-col {
+	width: 75%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+.content-col h1:first-of-type {
+	margin:0px;
+}
+
+.sidebar {
+	width: 25%;
+	float: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.sidebar h2:first-of-type {
+	margin-top:0px;
+}
+
+.featured-image {
+	width: 100%;
+}
+
+/* Blog Styles */
+
+.blog-post {
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+
+.blog-post:first-of-type {
+	margin-top: 0px;
+}
+
+.meta {
+	font-style: italic;
+	margin-top: 0px;
+}
+
+.read-more {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:10px;
+	background-color: #1da0aa;
+	color: #fff;
+}
+
+/* Contact Styles */
+
+.contact-us {
+	font-size: 0;
+}
+
+.contact-us p {
+	width:45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.contact-us input[type=text], .contact-us input[type=email], .contact-us textarea {
+	font-size: 16px;
+}
+
+.contact-us p:first-of-type {
+	margin-right:10%;
+}
+
+.contact-us label {
+	font-size: 12px;
+	display: block;
+	clear: both;
 }
 
 /* Responsive Styles */
@@ -400,5 +541,15 @@ h1,h2,h3,h4,h5,h6,p {
 
 	.moniker {
 		display: none;
+	}
+
+	.content-col {
+		width: 100%;
+		padding:0px;
+	}
+
+	.sidebar {
+		width: 100%;
+		padding:0px;
 	}
 }
