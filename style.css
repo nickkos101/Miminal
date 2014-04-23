@@ -116,6 +116,10 @@ input[type=text], input[type=email], input[type=password] {
 	background-size: cover;
 }
 
+.banner .container {
+	padding-top: 0px;
+}
+
 .slider {
 	width: 100%;
 	height:538px;
@@ -378,7 +382,8 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 .content-col h1:first-of-type {
-	margin:0px;
+	margin-top:0px;
+	margin-bottom: 10px;
 }
 
 .sidebar {
@@ -551,5 +556,14 @@ input[type=text], input[type=email], input[type=password] {
 	.sidebar {
 		width: 100%;
 		padding:0px;
+	}
+
+	.mobile-menu {
+		display: block;
+		float:right;
+	}
+
+	.navigation {
+		display: none;
 	}
 }
